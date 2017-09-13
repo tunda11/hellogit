@@ -1,3 +1,9 @@
+#ifndef Assignment_h
+#define Assignment_h   
+#include <iostream>
+
+using namespace std;
+   
    class Birthday{
 		
 		private: 
@@ -5,34 +11,34 @@
 		 int year, day;
 		
 		public:
-		  void Birthday(int d, string m, int y){
+		   Birthday(int d, string m, int y){
 		    day = d;
 		    month = m;
 		    year = y;
 		  }
 		
 		int getDay(){
-			return day;
+			return day; 
 		 }
 		
-		int setDay(int d){
+		void setDay(int d){
 			int day = d;
 		 }
-		void getMonth(){
-			month;
+		string getMonth(){
+			return month;
 		 }
 		
-		string setMonth(string m){
-			string month = m;
+		void setMonth(string m){
+			month = m;
 		 }
 		
 		int getYear(){
 			return year;
 		 }
 		
-		int setYear(int y){
+		void setYear(int y){
 			int year = y;
 		 }
-		}//End of Class
-		
+		};//End of Class
+	#endif	
 		

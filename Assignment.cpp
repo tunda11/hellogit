@@ -1,18 +1,26 @@
 //client 
+#include <iostream>
+#include <vector>
+#include "Assignment.h"
+
+using namespace std;
 
 int main ()
-	{	Birthday bDay;
-		bDay.seBirth( int d, string m, int y);
+	{	Birthday bDay = {15, "November", 2013};
+		
 		
 		vector <Birthday> v1 = {
-	{b1.setDay(), "b1.setMonth()", b1.setYear()},
-	{b2.setDay(), "b2.setMonth()", b2.setYear()},
-	{b3.setDay(), "b3.setMonth()", b3.setYear()},
-	{b4.setDay(), "b4.setMonth()", b4.setYear()},
+			{12, "Nov", 1996}
+	//{bDay.setDay(5), bDay.setMonth("Nov"), bDay.setYear(97)},
+	//{bDay.setDay(1), bDay.setMonth("Dec"), bDay.setYear(95)},
+	//{bDay.setDay(2), bDay.setMonth("Jan"), bDay.setYear(98)},
+	//{bDay.setDay(3), bDay.setMonth("Feb"), bDay.setYear(99)},
 	};
-	 v1 = {b1, b2, b3, b4}
-	 cout<<b1.getDay()<<" "<<b1.setMonth()<< " "<<b1.getYear()<<endl;
-	 cout<<b2.getDay()<<" "<<b2.setMonth()<< " "<<b2.getYear()<<endl;
-	 cout<<b3.getDay()<<" "<<b3.setMonth()<< " "<<b3.getYear()<<endl;
-	 cout<<b4.getDay()<<" "<<b4.setMonth()<< " "<<b4.getYear()<<endl;
+	 
+	 cout << "Done";
+	 cout << bDay.getDay() << " " << bDay.getMonth()<< " " << bDay.getYear() << endl;
+	 //cout << bDay.getDay() << " " << bDay.getMonth()<< " " << bDay.getYear() << endl;
+	 //cout << bDay.getDay() << " " << bDay.getMonth()<< " " << bDay.getYear() << endl;
+	 //cout << bDay.getDay() << " " << bDay.getMonth()<< " " << bDay.getYear() << endl;
+	 return 0;
 	}//End of Main
