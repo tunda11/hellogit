@@ -3,7 +3,22 @@
 #include <vector>
 #include "Assignment.h"
 
+
 using namespace std;
+
+
+int linearSearch(auto data, auto key);//prototype
+
+int linearSearch(auto data, auto key){
+	for (auto i = 0u; i < data.size(); i++) {
+		if (key == data[i].getYear()) {
+			cout << data[i].getYear();
+		return i;
+		}
+		
+	}
+	return -1;
+}
 
 int main ()
 	{	Birthday bDay = {15, "November", 2013};
@@ -22,8 +37,10 @@ int main ()
 	 v1.push_back({14, "Aug", 96});
 	 for ( int p = 0; p < v1.size(); p++)
 	 {
+		 linearSearch(v1, 1996);
 	 cout << v1[p].getDay() << " " << v1[p].getMonth()<< " " << v1[p].getYear() << endl;
  }
+	
 	 //cout << bDay.getDay() << " " << bDay.getMonth()<< " " << bDay.getYear() << endl;
 	 //cout << bDay.getDay() << " " << bDay.getMonth()<< " " << bDay.getYear() << endl;
 	 //cout << bDay.getDay() << " " << bDay.getMonth()<< " " << bDay.getYear() << endl;
